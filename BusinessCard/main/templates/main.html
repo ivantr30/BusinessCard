@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/102560801?v=4">
+    <title>BusinessCard</title>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/102560801?v=4" class="sitelogo">
+        <nav>
+            <a href="{% url 'main' %}">Home</a>
+            <a href="{% url 'contacts' %}">Contact with me</a>
+            <a href="{% url 'applications' %}">Leave an application</a>
+            <a href="{% url 'portfolio' %}">Portfolio</a>
+        </nav>
+    </header>
+</body>
+</html>

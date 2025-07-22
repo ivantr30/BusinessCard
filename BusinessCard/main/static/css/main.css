@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+header {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(22, 28, 35);
+}
+nav{
+    align-self: center;
+}
+.sitelogo{
+    width: 40px;
+    height: 40px;
+}
