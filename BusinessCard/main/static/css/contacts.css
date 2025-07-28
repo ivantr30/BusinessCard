@@ -1,6 +1,51 @@
 .container{
-    height:60vh;
-    background-size: contain;
+    display: flex;
+    height:max-content;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/ContactMeBgImage.jpg");
+}
+.panel{
+    display: flex;
+    height: 60vh;
+    width: 30vw;
+    background-color: rgba(245, 245, 220, 0.708);
+    box-shadow: 0 0 15px black;
+    align-self: center;
+    margin: 20vh 50px;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+.panel a{
+    margin-top: 15px;
+    padding-top: 15px;
+    display:flex;
+    flex-direction: column;
+    max-width:min-content;
+    text-decoration: none;
+    color: rgb(92, 6, 220);
+}
+.panel:hover{
+    
+}
+.panel span{
+    margin-top: 20px;
+    margin-left: 7.5px;
+}
+.fa-discord{
+    margin-left: -5.5px;
+}
+@media screen and (max-width: 600px) {
+    .panel{
+        width: 100vw;
+        height:105vh;
+        
+    }
+    .panel span{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .fa-discord{
+        margin-left: -4px;
+    }
 }
