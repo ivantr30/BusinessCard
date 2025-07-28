@@ -1,0 +1,6 @@
+.container{
+    height:60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/ContactMeBgImage.jpg");
+}
