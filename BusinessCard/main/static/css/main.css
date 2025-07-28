@@ -19,3 +19,18 @@ h1{
     padding-top: 3%;;
     align-self: flex-start;
 }
+.home{
+    background-color: unset;
+}
+.contacts{
+    background-color: var(--secondary-color);
+}
+.applications{
+    background-color: var(--secondary-color);
+}
+.portfolio{
+    background-color: var(--secondary-color);
+}
+p{
+
+}

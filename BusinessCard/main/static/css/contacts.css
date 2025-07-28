@@ -35,6 +35,18 @@
 .fa-discord{
     margin-left: -5.5px;
 }
+.home{
+    background-color: var(--secondary-color);
+}
+.contacts{
+    background-color: unset;
+}
+.applications{
+    background-color: var(--secondary-color);
+}
+.portfolio{
+    background-color: var(--secondary-color);
+}
 @media screen and (max-width: 600px) {
     .panel{
         width: 100vw;
