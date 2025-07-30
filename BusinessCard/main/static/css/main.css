@@ -1,6 +1,6 @@
 .container {
-    background-image: url('https://i.pinimg.com/originals/ec/b6/41/ecb6416c16b66e9e5409def9271224a2.gif');
-    height:85vh;
+    background-image: url('../images/SiteBg.png');
+    height:92vh;
     background-size:cover;
     background-position:bottom;
     background-blend-mode: darken;
@@ -31,6 +31,23 @@ h1{
 .portfolio{
     background-color: var(--secondary-color);
 }
-p{
-
+.description{
+    display: flex;
+    height: 70vh;
+    background-color: antiquewhite;
+    margin: 0%;
+}
+.aboutme{
+    font-size: large;
+    margin: 0%;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 40vw;
+    line-height: 2;
+}
+.CodeWarsStat{
+    width: 60vw;
+    height: 60vh;
+    margin-top: 2vw;
+    margin-right: 1vw;
 }

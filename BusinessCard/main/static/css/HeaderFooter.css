@@ -28,7 +28,7 @@ header a{
     display:flex;
     /* width:min-content; */
     align-items: center;
-    padding: 15px 20px;
+    padding: 0.5vw 1.5vw;
     border-radius: 25px;
     border: solid 1px var(--light-color);
     color: var(--light-color);
