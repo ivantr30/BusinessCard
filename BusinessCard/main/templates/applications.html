@@ -1,1 +1,16 @@
 {% extends 'main.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/applications.css' %}">
+{% endblock %}
+{% block title%}Applications{% endblock %}
+{% block content%}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.name}}
+    {{form.offer}}
+    {{form.email}}
+    <button type="submit">Send</button>
+    <span>{{msg}}</span>
+</form>
+{% endblock%}

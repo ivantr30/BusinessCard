@@ -1,0 +1,12 @@
+.home{
+    background-color: var(--secondary-color);
+}
+.contacts{
+    background-color: var(--secondary-color);
+}
+.applications{
+    background-color: unset;
+}
+.portfolio{
+    background-color: var(--secondary-color);
+}
