@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .container h1 {
     font-size:2.5rem;
@@ -31,23 +32,33 @@ h1{
 .portfolio{
     background-color: var(--secondary-color);
 }
-.description{
+.description {
     display: flex;
-    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
     background-color: antiquewhite;
-    margin: 0%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.aboutme{
-    font-size: large;
-    margin: 0%;
-    margin-top: 2vw;
-    margin-left: 2vw;
-    width: 40vw;
-    line-height: 2;
+
+.aboutme {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: center;
 }
-.CodeWarsStat{
-    width: 60vw;
-    height: 60vh;
-    margin-top: 2vw;
-    margin-right: 1vw;
+
+.CodeWarsStat {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    max-height: 50vh;
+    object-fit: contain;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

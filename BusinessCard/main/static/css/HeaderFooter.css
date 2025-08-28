@@ -11,7 +11,7 @@
 header {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
     background-color: rgb(22, 28, 35);
     font-size: 0.9rem;
     align-items:center;
@@ -26,7 +26,6 @@ header a{
 }
 .btn {
     display:flex;
-    /* width:min-content; */
     align-items: center;
     padding: 0.5vw 1.5vw;
     border-radius: 25px;
