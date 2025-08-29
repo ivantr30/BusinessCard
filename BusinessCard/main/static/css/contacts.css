@@ -7,7 +7,8 @@
 }
 .panel{
     display: flex;
-    height: 60vh;
+    padding: 15px;
+    height: fit-content;
     width: 30vw;
     background-color: rgba(245, 245, 220, 0.708);
     box-shadow: 0 0 15px black;
@@ -18,7 +19,6 @@
 }
 .panel a{
     margin-top: 15px;
-    padding-top: 15px;
     display:flex;
     flex-direction: column;
     max-width:min-content;
@@ -44,11 +44,9 @@
 .portfolio{
     background-color: var(--secondary-color);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .panel{
         width: 100vw;
-        height:105vh;
-        
     }
     .panel span{
         margin-top: 20px;
