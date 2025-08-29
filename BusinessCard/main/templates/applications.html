@@ -5,16 +5,16 @@
 {% endblock %}
 {% block title%}Applications{% endblock %}
 {% block content%}
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="container">
-        <div class="applicationForm">
-            {{form.name}}
-            {{form.offer}}
-            {{form.email}}
-            <button type="submit">Send</button>
-            <span>{{msg}}</span>
-        </div>
-    </div>
-</form>
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="applicationForm">
+                {{form.name}}
+                {{form.offer}}
+                {{form.email}}
+                <button type="submit">Send</button>
+                <span>{{msg}}</span>
+            </div>
+    </form>
+</div>
 {% endblock%}
