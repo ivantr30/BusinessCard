@@ -1,1 +1,15 @@
 {% extends 'main.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+{% endblock %}
+{% block title%}Portfolio{% endblock %}
+{% block content%}
+<div class="container">
+    {% for project in projects%}
+        <div class="project">
+            
+        </div>
+    {% endfor %}
+</div>
+{% endblock%}

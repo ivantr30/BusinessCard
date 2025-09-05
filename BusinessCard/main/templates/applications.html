@@ -1,8 +1,3 @@
-<script>
-    function ShowResult(){
-        alert(document.getElementsByClassName('applicationForm')[0].dataset.message)
-    }
-</script>
 {% extends 'main.html' %}
 {% load static %}
 {% block links %}
@@ -13,11 +8,14 @@
 <div class="container">
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-            <div class="applicationForm" data-message='{{msg}}'>
+            <div class="applicationForm">
                 {{form.name}}
                 {{form.offer}}
                 {{form.email}}
-                <button type="submit" onclick="ShowResult()">Send</button>
+                <button type="submit" onclick="">Send</button>
+                <div class="resultMessage">
+                    <span>{{msg}}</span>
+                </div>
             </div>
     </form>
 </div>

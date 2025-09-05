@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from .models import ProjectModel
 from .forms import ApplicationForm
 
 # Create your views here.
@@ -7,7 +9,8 @@ def main(request):
 def contacts(request):
     return render(request, template_name='contacts.html')
 def portfolio(request):
-    return render(request, template_name='portfolio.html')
+    projects = ProjectModel.objects.all()
+    return render(request, template_name='portfolio.html', context={'projects' : projects})
 def applications(request):
     msg = ""
     if request.method == 'POST':

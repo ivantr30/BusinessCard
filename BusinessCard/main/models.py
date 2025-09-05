@@ -7,3 +7,10 @@ class ApplicationModel(models.Model):
     email = models.EmailField()
     def __str__(self):
         return self.offer[:50]
+    
+class ProjectModel(models.Model):
+    name = models.CharField(max_length=50)
+    image = models.ImageField()
+    url = models.URLField()
+    def __str__(self):
+        return self.name
