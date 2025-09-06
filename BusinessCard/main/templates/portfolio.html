@@ -7,8 +7,16 @@
 {% block content%}
 <div class="container">
     {% for project in projects%}
-        <div class="project">
-            
+        <div class="projectcard">
+            <div class="inner">
+                <div class="front">
+                    <img src="{{project.image.url}}" alt="Error" class="projectimage">
+                    <h2 class="projectname">{{project.name}}</h2>
+                </div>
+                <div class="back">
+                    <a href="{{project.url}}"><p class="projectdescription">{{project.description}}</p></a>
+                </div>
+            </div>
         </div>
     {% endfor %}
 </div>

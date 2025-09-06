@@ -10,6 +10,7 @@ class ApplicationModel(models.Model):
     
 class ProjectModel(models.Model):
     name = models.CharField(max_length=50)
+    description = models.TextField(max_length=500)
     image = models.ImageField()
     url = models.URLField()
     def __str__(self):
