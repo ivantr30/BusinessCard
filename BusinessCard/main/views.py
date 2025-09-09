@@ -21,7 +21,6 @@ def applications(request):
         form = ApplicationForm(request.POST)
         if form.is_valid():
             form.save()
-            msg = "Success"
             data = form.cleaned_data
             message = (
                 f"!Новая заявка:!\n"
@@ -30,7 +29,7 @@ def applications(request):
                 f"Предложение: {data['offer']}"
             )
             send_offer(message)
-            return HttpResponseRedirect("")
+            return HttpResponseRedirect("/")
         else:
             msg = "Maboy, the form is not valid"
     else:

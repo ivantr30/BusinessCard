@@ -23,24 +23,6 @@
 .offerInputField{
     resize: none;
 }
-.resultMessage{
-    width: 100%;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-.resultMessage:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 .applicationForm input:focus,
 .applicationForm textarea:focus {
