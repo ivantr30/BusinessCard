@@ -129,7 +129,7 @@ STATICFILES_DIRS = [BASE_DIR / 'BusinessCard/static']
 STATIC_ROOT = BASE_DIR / 'staticfiles/static'
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+MEDIA_ROOT = BASE_DIR / 'staticfiles/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
